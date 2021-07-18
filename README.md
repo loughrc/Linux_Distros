@@ -4,7 +4,7 @@
 
 While servers running on Linux are commonplace and Android for mobile phones is built upon Linux architecture, desktop versions of the operating system have failed to break into the mainstream of the established offerings by Microsoft and Apple. The existence of over 600 versions of the OS (known as distributions, or for short, distros), however, is fascinating and tells us while these versions of the OS are not mainstream, there is certainly a market for them worldwide. 
 
-The first part of this project shows the creation of a relational database from the ground up, using data regarding Linux distros in one table, information about Desktop Environments in another, and another including information about the computers I own and the distros that run on each computer. The second part of this project uses just the Linux distro table, which we use to glean insights from this data through visualisation on a Tableau Dashboard.
+The first part of this project shows the creation of a relational database from the ground up, using data regarding Linux distros in one table, information about Desktop Environments in another, and another including information about the computers I own and the distros that run on each computer. The second part of this project uses just the Linux distro table, which we use to glean insights from this data through visualisation on a Tableau Dashboard, which can be viewed [here](https://public.tableau.com/app/profile/conor.loughran/viz/MostPopularLinuxDistributionsAnalysisbasedonDistrowatch_com/Dashboard1).
 
 
 ## The Data:
