@@ -2,7 +2,7 @@
 
 ## Introduction:
 
-While servers running on Linux are commonplace and Android for mobile phones is built upon Linux architecture, desktop versions of the operating system have failed to break into the mainstream of the established offerings by Microsoft and Apple. The existence of over 600 versions of the OS (known as distributions, or for short, distros), however, is fascinating and tells us while these versions of the OS are not mainstream, there is certainly a market for them worldwide. 
+While servers running on Linux are commonplace and Android for mobile phones is built upon Linux architecture, desktop versions of the operating system have failed to break into the mainstream of the established offerings by Microsoft, Apple, and more recently, Google, despite Google's ChromeOS also being based on Linux architecture. The existence of over 600 independent versions of the OS (known as distributions, or for short, distros), however, is fascinating and tells us that while these versions of the OS are not mainstream, there is certainly a market for them worldwide. 
 
 The first part of this project shows the creation of a relational database from the ground up, using data regarding Linux distros in one table, information about Desktop Environments in another, and another including information about the computers I own and the distros that run on each computer. The second part of this project uses just the Linux distro table, which we use to glean insights from this data through visualisation on a Tableau Dashboard, which can be viewed [here](https://public.tableau.com/app/profile/conor.loughran/viz/MostPopularLinuxDistributionsAnalysisbasedonDistrowatch_com/Dashboard1).
 
@@ -12,6 +12,31 @@ The first part of this project shows the creation of a relational database from 
 The data used in both the building of the database as well as the building of the dashboard was taken from Distrowatch.com, a website where Linux distros are ranked and rated by the Linux community. The rankings are calculated by page clicks, i.e. when somebody clicks on the title page for a particular distro this is appended to the ranking score, and the ratings are made by those who leave reviews on a particular distro. For the database, data from the top 20 Linux distros (as well as a select few others) are used, whereas for the data visualisation only the top 20 is used. 
 
 The quantative features include numeric values such as the average user rating (out of 10) for a particular distro, the number of reviews given to a particular distro, and the rating of a distro in terms of the number of daily clicks that distro's page achieves on Distrowatch.com. The categorical features include the desktop environment that is installed by default on a particular distro (i.e. GNOME, KDE Plasma), and the name of the original distro that the current distro is based on (for example, most distros are built on the same architecture as a pre-existing distro like Debian or Arch). The data used in this project was correct as of 14 July 2021 and it is likely that the figures on Distrowatch.com will have changed since this date.
+
+
+## Features of the Dataset
+
+**distro_id:** A unique identifier for each Linux distribution/distro.
+
+**distro_name:** The name of each distro.
+
+**based_on_id:** Most linux distros are based on a pre-existing architecture of another linux distro. This column gives us the unique identifier of the distro that each particular distro in the dataset is based on. Some of these values are NULL because a distro is completely independent of any architecture that existed before it.
+
+**default_d_env:** This column tells us the unique identifier of the Desktop Environment that is installed by default on each distro. The distro Arch Linux has a NULL value here because there is no default; the user installs any desktop environment of their choosing during setup.
+
+**origin:** The country where the original lead developer(s) of the distro worked to release the first iteration of the distro. For example, the distro Solus is still considered Irish, even though the original lead developer Ikey Doherty (who is Irish) left the project two years ago.
+
+**dw_score:** This tells us the popularity rating that a distro achieved based on the average number of clicks per day that a particular distro gets on the landing page of that distro on the website Distrowatch.com.
+
+**dw_rating:** This tells us the average rating (from Distrowatch.com) that a distro achieved when reviewed by members of the Linux community who have used this distro.
+
+**num_reviews:** The number of times a distro has been reviewed on Distrowatch.com.
+
+**last_updated:** This tells us when the latest software and security updates were released for a particular distro. This information was correct as of 14th July 2021 when the data was collected.
+
+**DE:** The name (NOT the identifier) of the Desktop Environment that comes by default with each distro. This column was created for the purposes of visualisation in Tableau.
+
+**based_on:** The name (NOT the identifier) of the original distro that each distro in the dataset is based on. This column was created for the purposes of visualisation in Tableau.
 
 
 ## Project Overview:
