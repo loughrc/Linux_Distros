@@ -1,0 +1,21 @@
+distro_id,distro_name,based_on_id,default_d_env,origin,dw_score,dw_rating,num_reviews,last_updated,DE,based_on
+100,Arch Linux,NULL,NULL,Canada,612,9.4,309,2021-07-14,NULL,NULL
+101,Debian,NULL,200,Global,1218,8.8,547,2021-07-14,GNOME,NULL
+102,Ubuntu,101,200,Isle of Man,1318,7.5,465,2021-07-14,GNOME,Debian
+103,ElementaryOS,101,209,USA,1114,7.2,278,2021-06-18,Pantheon,Debian
+105,Linux Mint,102,207,Ireland,2062,8.7,1117,2021-07-09,Cinnamon,Ubuntu
+106,PopOS,102,200,USA,1782,8.4,385,2021-06-30,GNOME,Ubuntu
+107,EndeavourOS,100,203,Netherlands,1924,8.9,176,2021-04-18,XFCE,Arch
+108,Fedora,NULL,200,USA,1002,8.3,427,2021-07-14,GNOME,NULL
+109,AntiX,101,208,Greece,539,8.4,193,2021-06-11,ROX-Ice,Debian
+110,MX Linux,101,203,Greece,3167,8.7,1293,2021-04-07,XFCE,Debian
+115,Solus,NULL,206,Ireland,700,8.4,466,2021-07-14,Budgie,NULL
+116,Garuda Linux,100,201,India,921,8.5,124,2021-07-06,KDE Plasma,Arch
+118,Manjaro,100,203,France,2345,8.4,1050,2021-07-14,XFCE,Arch
+122,OpenSUSE,NULL,201,Germany,885,9,475,2021-07-14,KDE Plasma,NULL
+123,Deepin,101,211,China,548,8.7,471,2021-07-11,DDE,Debian
+124,KDE Neon,102,201,UK,725,8.9,313,2021-07-14,KDE Plasma,Ubuntu
+125,Puppy Linux,NULL,212,Australia,478,9,156,2020-09-22,JWM,NULL
+126,Mageia,NULL,201,France,456,8.5,182,2021-07-14,KDE Plasma,NULL
+127,PCLinuxOS,NULL,201,USA,467,8.6,170,2021-07-14,KDE Plasma,NULL
+128,Zorin OS,102,200,Ireland,670,8.5,286,2021-04-20,GNOME,Ubuntu
