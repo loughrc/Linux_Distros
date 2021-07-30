@@ -14,7 +14,7 @@ The data used in both the building of the database as well as the building of th
 The quantative features include numeric values such as the average user rating (out of 10) for a particular distro, the number of reviews given to a particular distro, and the rating of a distro in terms of the number of daily clicks that distro's page achieves on Distrowatch.com. The categorical features include the desktop environment that is installed by default on a particular distro (i.e. GNOME, KDE Plasma), and the name of the original distro that the current distro is based on (for example, most distros are built on the same architecture as a pre-existing distro like Debian or Arch). The data used in this project was correct as of 14 July 2021 and it is likely that the figures on Distrowatch.com will have changed since this date.
 
 
-## Features of the Dataset
+## Features of the Dataset:
 
 **distro_id:** A unique identifier for each Linux distribution/distro.
 
